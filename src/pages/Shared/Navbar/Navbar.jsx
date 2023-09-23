@@ -1,11 +1,19 @@
-import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPhoneAlt,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
   return (
     <header>
-      <div className="flex items-baseline justify-between bg-primary px-[120px] py-[14px] text-white">
+      <div className="flex items-center justify-between bg-primary px-[120px] py-[14px] text-[#f0f0f0]">
         <div className="flex justify-start items-center gap-[30px]">
           <div className="flex justify-center items-center gap-[8px] text-[16px] leading-[26px] font-normal">
             <FaPhoneAlt className="w-[19px] h-[18px]" />
@@ -16,8 +24,8 @@ const Navbar = () => {
             <p>onestschooled@gmail.com</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="flex justify-center items-center gap-[26px]">
+          <div className="mt-[8px]">
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
               <input type="checkbox" />
@@ -41,9 +49,28 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+          <div>
+            <div
+              className="border border-[#d0d0d0] rounded-[8px] px-[16px] text-[14px] text-normal h-[40px] flex justify-center items-center gap-[10px] cursor-pointer"
+            >
+              English
+              <div className="arrow-container">
+                <IoIosArrowDown id="down" className="w-[20px] h-[20px]" />
+                <IoIosArrowUp id="up" className="hidden w-[20px] h-[20px]" />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center gap-5 text-[20px]">
+            <FaFacebook></FaFacebook>
+            <FaInstagram></FaInstagram>
+            <FaTwitter></FaTwitter>
+            <FaYoutube></FaYoutube>
+          </div>
+          <div className="bg-[#3c4e56] w-[1px] h-[24px]" />
+          <div className="text-[#f0f0f0] font-normal text-[16px]">
+            <Link>Login</Link>
+          </div>
         </div>
       </div>
       <nav></nav>
