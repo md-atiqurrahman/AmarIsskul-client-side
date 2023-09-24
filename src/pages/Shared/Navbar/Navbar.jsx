@@ -13,16 +13,27 @@ import {
 } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const [t, i18n] = useTranslation("global");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
   const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default selected language
+
+  const handleTranselateLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
   };
 
   const selectLanguage = (language) => {
+    if (language === "English") {
+      handleTranselateLanguage("en");
+    } else if (language === "Bangla") {
+      handleTranselateLanguage("bn");
+    }
     setSelectedLanguage(language); // Set the selected language
     toggleDropdown(); // Close the dropdown
   };
@@ -64,7 +75,6 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-
           <div>
             <div className="relative inline-block text-left group">
               <div
@@ -132,7 +142,7 @@ const Navbar = () => {
           </div>
           <div className="bg-[#3c4e56] w-[1px] h-[24px]" />
           <div className="text-[#f0f0f0] font-normal text-[16px] transition-all duration-300 hover:text-secondary">
-            <Link to="/">Login</Link>
+            <Link to="/">{t("header.login")}</Link>
           </div>
         </div>
       </div>
@@ -153,13 +163,13 @@ const Navbar = () => {
                 className="transition-all duration-300 hover:text-secondary"
                 to="/"
               >
-                Home
+                {t("menu.home")}
               </Link>
             </li>
             <li>
               <div className="relative inline-block text-left group">
                 <button className="flex justify-center items-center gap-2 transition-all duration-300 hover:text-secondary">
-                  <p>Announcement</p>
+                  <p>{t("menu.announcement")}</p>
                   <IoMdArrowDropdown className="mt-[3px] text-[21px]" />
                 </button>
                 <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 absolute z-10 mt-2 w-48 origin-top-right right-0 rounded-md shadow-lg bg-[#14151b] ring-1 ring-black ring-opacity-5">
@@ -174,28 +184,28 @@ const Navbar = () => {
                       className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
                       role="menuitem"
                     >
-                      News
+                      {t("menu.news")}
                     </Link>
                     <Link
                       to="/"
                       className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
                       role="menuitem"
                     >
-                      Notice
+                      {t("menu.notice")}
                     </Link>
                     <Link
                       to="/"
                       className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
                       role="menuitem"
                     >
-                      Result
+                      {t("menu.result")}
                     </Link>
                     <Link
                       to="/"
                       className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
                       role="menuitem"
                     >
-                      Holiday
+                      {t("menu.holiday")}
                     </Link>
                   </div>
                 </div>
@@ -206,7 +216,7 @@ const Navbar = () => {
                 className="transition-all duration-300 hover:text-secondary"
                 to="/"
               >
-                Events
+                {t("menu.events")}
               </Link>
             </li>
             <li>
@@ -214,7 +224,7 @@ const Navbar = () => {
                 className="transition-all duration-300 hover:text-secondary"
                 to="/"
               >
-                Teacher
+                {t("menu.teacher")}
               </Link>
             </li>
             <li>
@@ -222,7 +232,7 @@ const Navbar = () => {
                 className="transition-all duration-300 hover:text-secondary"
                 to="/"
               >
-                Staff
+                {t("menu.staff")}
               </Link>
             </li>
             <li>
@@ -230,11 +240,11 @@ const Navbar = () => {
                 className="transition-all duration-300 hover:text-secondary"
                 to="/"
               >
-                Contact Us
+                {t("menu.contact")}
               </Link>
             </li>
             <div className="bg-secondary text-white py-[11px] px-[13px]  border border-secondary rounded-[4px] text-[16px] font-bold cursor-pointer capitalize transition-all duration-300 hover:bg-inherit hover:text-secondary hover:border hover:border-secondary">
-              Online Admission
+              {t("menu.admission")}
             </div>
           </ul>
         </div>

@@ -1,0 +1,22 @@
+{
+  "header": {
+    "login": "Login"
+  },
+  "languages": {
+    "english": "English",
+    "bangla": "Bangla"
+  },
+  "menu": {
+    "home": "Home",
+    "announcement": "Announcement",
+    "news": "News",
+    "notice": "Notice",
+    "result": "Result",
+    "holiday": "Holiday",
+    "events": "Events",
+    "teacher": "Teacher",
+    "staff": "Staff",
+    "contact": "Contact Us",
+    "admission": "Online Admission"
+  }
+}

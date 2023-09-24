@@ -1,0 +1,22 @@
+{
+  "header": {
+    "login": "লগইন"
+  },
+  "languages": {
+    "english": "English",
+    "bangla": "Bangla"
+  },
+  "menu": {
+    "home": "হোম",
+    "announcement": "ঘোষণা",
+    "news": "খবর",
+    "notice": "বিজ্ঞপ্তি",
+    "result": "ফলাফল",
+    "holiday": "ছুটির দিন",
+    "events": "ইভেন্টস",
+    "teacher": "শিক্ষক",
+    "staff": "কর্মচারী",
+    "contact": "যোগাযোগ করুন",
+    "admission": "অনলাইন ভর্তি"
+  }
+}
