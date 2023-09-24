@@ -1,27 +1,42 @@
 import {
-  FaFacebook,
+  FaFacebookF,
   FaInstagram,
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoIosArrowUp,
+  IoMdArrowDropdown,
+} from "react-icons/io";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
+  const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default selected language
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
+  };
+
+  const selectLanguage = (language) => {
+    setSelectedLanguage(language); // Set the selected language
+    toggleDropdown(); // Close the dropdown
+  };
   return (
     <header>
       <div className="flex items-center justify-between bg-primary px-[120px] py-[14px] text-[#f0f0f0]">
         <div className="flex justify-start items-center gap-[30px]">
           <div className="flex justify-center items-center gap-[8px] text-[16px] leading-[26px] font-normal">
             <FaPhoneAlt className="w-[19px] h-[18px]" />
-            <p>+62 8787 8787</p>
+            <p>+880 1722647592</p>
           </div>
           <div className="flex justify-center items-center gap-[8px] text-[16px] leading-[26px] font-normal">
             <RiMailSendLine className="w-[28px] h-[24px]" />
-            <p>onestschooled@gmail.com</p>
+            <p>sch121437@gmail.com</p>
           </div>
         </div>
         <div className="flex justify-center items-center gap-[26px]">
@@ -51,29 +66,179 @@ const Navbar = () => {
           </div>
 
           <div>
-            <div
-              className="border border-[#d0d0d0] rounded-[8px] px-[16px] text-[14px] text-normal h-[40px] flex justify-center items-center gap-[10px] cursor-pointer"
-            >
-              English
-              <div className="arrow-container">
-                <IoIosArrowDown id="down" className="w-[20px] h-[20px]" />
-                <IoIosArrowUp id="up" className="hidden w-[20px] h-[20px]" />
+            <div className="relative inline-block text-left group">
+              <div
+                className="border border-[#d0d0d0] rounded-[8px] px-[16px] text-[14px] text-normal h-[40px] flex justify-center items-center gap-[10px] cursor-pointer"
+                onClick={toggleDropdown}
+              >
+                {selectedLanguage}
+                <div className="arrow-container">
+                  {isDropdownOpen ? (
+                    <IoIosArrowUp className="w-[20px] h-[20px]" />
+                  ) : (
+                    <IoIosArrowDown className="w-[20px] h-[20px]" />
+                  )}
+                </div>
               </div>
+              {isDropdownOpen && (
+                <div className="absolute z-10 mt-2 w-48 origin-top-right right-0 rounded-md shadow-lg bg-[#27282e] ring-1 ring-black ring-opacity-5">
+                  <ul>
+                    <li
+                      className="py-2 px-4 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      onClick={() => selectLanguage("English")}
+                    >
+                      English
+                    </li>
+                    <li
+                      className="py-2 px-4 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      onClick={() => selectLanguage("Bangla")}
+                    >
+                      Bangla
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
           <div className="flex justify-center items-center gap-5 text-[20px]">
-            <FaFacebook></FaFacebook>
-            <FaInstagram></FaInstagram>
-            <FaTwitter></FaTwitter>
-            <FaYoutube></FaYoutube>
+            <Link
+              target="_blank"
+              to="https://www.facebook.com/profile.php?id=100064090835715"
+              className="transition-all duration-300 hover:text-secondary"
+            >
+              <FaFacebookF className="text-[18px]" />
+            </Link>
+            <Link
+              className="transition-all duration-300 hover:text-secondary"
+              target="_blank"
+              to="https://www.instagram.com/"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              className="transition-all duration-300 hover:text-secondary"
+              target="_blank"
+              to="https://twitter.com/"
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              target="_blank"
+              to="https://www.youtube.com/@molongbazarblhighschool5569"
+              className="transition-all duration-300 hover:text-secondary"
+            >
+              <FaYoutube className="text-[22px]" />
+            </Link>
           </div>
           <div className="bg-[#3c4e56] w-[1px] h-[24px]" />
-          <div className="text-[#f0f0f0] font-normal text-[16px]">
-            <Link>Login</Link>
+          <div className="text-[#f0f0f0] font-normal text-[16px] transition-all duration-300 hover:text-secondary">
+            <Link to="/">Login</Link>
           </div>
         </div>
       </div>
-      <nav></nav>
+      <nav className="flex justify-between items-center px-[120px] bg-[#14151b] text-white">
+        <div>
+          <Link to="/">
+            <img
+              className="w-[95px] h-[95px]"
+              src="../../../../src/assets/Navbar/logo.png"
+              alt=""
+            />
+          </Link>
+        </div>
+        <div>
+          <ul className="flex justify-center items-center gap-[30px] text-[18px] font-normal capitalize">
+            <li>
+              <Link
+                className="transition-all duration-300 hover:text-secondary"
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <div className="relative inline-block text-left group">
+                <button className="flex justify-center items-center gap-2 transition-all duration-300 hover:text-secondary">
+                  <p>Announcement</p>
+                  <IoMdArrowDropdown className="mt-[3px] text-[21px]" />
+                </button>
+                <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 absolute z-10 mt-2 w-48 origin-top-right right-0 rounded-md shadow-lg bg-[#14151b] ring-1 ring-black ring-opacity-5">
+                  <div
+                    className="py-1"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="options-menu"
+                  >
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      role="menuitem"
+                    >
+                      News
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      role="menuitem"
+                    >
+                      Notice
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      role="menuitem"
+                    >
+                      Result
+                    </Link>
+                    <Link
+                      to="/"
+                      className="block px-4 py-2 text-sm text-white transition-all duration-300 hover:text-secondary hover:bg-[#3d3e43] cursor-pointer"
+                      role="menuitem"
+                    >
+                      Holiday
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <Link
+                className="transition-all duration-300 hover:text-secondary"
+                to="/"
+              >
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-all duration-300 hover:text-secondary"
+                to="/"
+              >
+                Teacher
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-all duration-300 hover:text-secondary"
+                to="/"
+              >
+                Staff
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-all duration-300 hover:text-secondary"
+                to="/"
+              >
+                Contact Us
+              </Link>
+            </li>
+            <div className="bg-secondary text-white py-[11px] px-[13px]  border border-secondary rounded-[4px] text-[16px] font-bold cursor-pointer capitalize transition-all duration-300 hover:bg-inherit hover:text-secondary hover:border hover:border-secondary">
+              Online Admission
+            </div>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 };
