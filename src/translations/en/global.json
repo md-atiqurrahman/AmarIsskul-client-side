@@ -18,5 +18,9 @@
     "staff": "Staff",
     "contact": "Contact Us",
     "admission": "Online Admission"
+  },
+  "banner":{
+    "text": "Welcome To",
+    "name": "Molong Bazar BL High School"
   }
 }

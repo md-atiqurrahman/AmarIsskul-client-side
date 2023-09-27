@@ -12,13 +12,15 @@ import {
   IoMdArrowDropdown,
 } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import './Navbar.css';
 
 const Navbar = () => {
   const [t, i18n] = useTranslation("global");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
   const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default selected language
+  const [isFixed, setIsFixed] = useState(false);
 
   const handleTranselateLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -37,8 +39,29 @@ const Navbar = () => {
     setSelectedLanguage(language); // Set the selected language
     toggleDropdown(); // Close the dropdown
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const headerClasses = `${
+    isFixed ? 'header-animation' : ''
+  }`;
+
   return (
-    <header>
+    <header className={headerClasses}>
       <div className="flex items-center justify-between bg-primary px-[120px] py-[14px] text-[#f0f0f0]">
         <div className="flex justify-start items-center gap-[30px]">
           <div className="flex justify-center items-center gap-[8px] text-[16px] leading-[26px] font-normal">
