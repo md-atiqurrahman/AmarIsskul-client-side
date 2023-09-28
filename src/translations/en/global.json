@@ -19,8 +19,15 @@
     "contact": "Contact Us",
     "admission": "Online Admission"
   },
-  "banner":{
+  "banner": {
     "text": "Welcome To",
-    "name": "Molong Bazar BL High School"
+    "name": "Molong Bazar BL High School",
+    "admission": "Admission"
+  },
+  "welcome": {
+    "text": "Welcome To",
+    "name": "Molong Bazar BL High School",
+    "about": "Molong Bazar BL High School, located in Moheshpur Ghagar Bazar Sadullapur Gaibandha, operates under Dinajpur Education Board. Established on January 1, 1959, it offers co-educational programs in Humanities, Business Studies, and Science. The school is government-recognized and provides secondary-level education with EIIN 121437. Managed by Managing, it holds MPO status with number 8705081305. Situated in a Plain Land geography within constituency no. 3, the school's teachers have an average age of 49 years...",
+     "buttonText": "Read More"
   }
 }

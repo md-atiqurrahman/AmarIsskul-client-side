@@ -61,11 +61,14 @@ const Banner = () => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <div className="text-container">
-        <div className="text-[#14151b] text-[42px] font-normal leading-[57px]">
+        <div className="text-accent text-[42px] font-sembold leading-[57px]">
         {t("banner.text")}
         </div>
-        <div className="text-white text-[42px] font-bold leading-[57px]">
+        <div className="text-white text-[42px] font-bold leading-[57px] mb-[65px] px-[50px]">
         {t("banner.name")}
+        </div>
+        <div className="w-[162px] mx-auto text-white py-[9px] px-[25px]  border border-primary rounded-[10px] text-[24px] font-medium leading-[28px] cursor-pointer capitalize transition-all duration-500 hover:bg-primary">
+          {t("banner.admission")}
         </div>
       </div>
       <button

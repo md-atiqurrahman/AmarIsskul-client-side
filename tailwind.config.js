@@ -7,6 +7,7 @@ module.exports = {
         banner1: "url('/src/assets/Banner/banner-1.jpg')",
         banner2: "url('/src/assets/Banner/banner-2.jpg')",
         banner3: "url('/src/assets/Banner/banner-3.jpg')",
+        welcomeBg: "url('/src/assets/Welcome/welcome-bg.png')",
       }
     }
   },
@@ -14,10 +15,10 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#392c7d",
-          secondary: "#ff5170",
-          accent: "#555555",
-          neutral: "#6B6B6B",
+          primary: "#001f67",
+          secondary: "#1942a3",
+          accent: "#131313",
+          neutral: "#0b0b0b",
           base: "#ffffff",
         },
       },
