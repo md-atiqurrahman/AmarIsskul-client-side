@@ -2,12 +2,18 @@
     z-index: 90;
     box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     top: -70px;
     left: 0;
     right: 0;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
+}
+
+@media only screen and (min-width: 1441px) {
+    .navbar-animation{
+        width: 1440px;
+        margin: 0 auto;
+    }
 }

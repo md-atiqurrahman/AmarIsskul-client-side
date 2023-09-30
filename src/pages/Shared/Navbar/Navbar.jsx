@@ -206,7 +206,7 @@ const Navbar = () => {
               <li>
                 <Link to="/">{t("menu.contact")}</Link>
               </li>
-              <div className="text-white py-[11px] px-[13px]  border border-white rounded-[4px] text-[16px] cursor-pointer capitalize">
+              <div className="bg-white text-primary font-semibold py-[11px] px-[13px] border border-white  rounded-[4px] text-[16px] cursor-pointer capitalize transition-all duration-500 hover:bg-transparent hover:text-white">
                 {t("menu.admission")}
               </div>
             </ul>
