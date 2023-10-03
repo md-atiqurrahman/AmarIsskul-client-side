@@ -1,0 +1,63 @@
+.single-event {
+  box-shadow: 0px 5px 24px 0px rgba(170, 170, 170, 0.75);
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 30px;
+  max-width: 350px;
+  transition: 0.3s;
+}
+.single-event:hover {
+  box-shadow: 0px 5px 20px 5px rgb(170, 170, 170);
+  transition: 0.3s;
+}
+
+.single-event::before {
+  background: url(/src/assets/LatestEvents/border-top.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.single-event:hover::before {
+    width: calc(100% - -10px);
+    left: -5px;
+    top: -5px;
+}
+.single-event::after {
+  background: url(/src/assets/LatestEvents/border-bottom.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0px;
+  height: 53px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.single-event:hover::after{
+    width: calc(100% - -10px);
+    left: -5px;
+    bottom: -5px;
+}
+
+.single-event img {
+  transition: 0.3s;
+}
+
+.single-event:hover img {
+    filter: grayscale(100%);
+  }
+  

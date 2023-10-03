@@ -1,4 +1,4 @@
-.facilities-area::before {
+.dark-effect::before {
   content: "";
   position: absolute;
   z-index: -1;

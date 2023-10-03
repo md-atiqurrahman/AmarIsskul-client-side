@@ -28,7 +28,7 @@
     "text": "Welcome To",
     "name": "Molong Bazar BL High School",
     "about": "Molong Bazar BL High School, located in Moheshpur Ghagar Bazar Sadullapur Gaibandha, operates under Dinajpur Education Board. Established on January 1, 1959, it offers co-educational programs in Humanities, Business Studies, and Science. The school is government-recognized and provides secondary-level education with EIIN 121437. Managed by Managing, it holds MPO status with number 8705081305. Situated in a Plain Land geography within constituency no. 3, the school's teachers have an average age of 40 years...",
-     "buttonText": "Read More"
+    "buttonText": "Read More"
   },
   "facilities": {
     "sectionTitle": "Our Facilities",
@@ -36,6 +36,63 @@
     "facilityTitle2": "Library",
     "facilityTitle3": "Transport",
     "facilityTitle4": "Hostel"
-
+  },
+  "events": {
+    "sectionTitle": "Latest Event",
+    "event1": {
+      "metaTilte": "Student (Event for)",
+      "metaDate": "18-06-2023 19-06-2023",
+      "metaLocation": "Mystic Seaport",
+      "title": "Premiers Awards for ...",
+      "description": "Donec quis nisi vitae dui porttitor sodales. Integer molestie laoreet libero, quis vestibulum erat sodales quis. Pellentesque efficitur, metus non interdum euis..."
+    },
+    "event2": {
+      "metaTilte": "All (Event for)",
+      "metaDate": " 14-06-2023 16-06-2023",
+      "metaLocation": "Nehantic State Forest",
+      "title": "Global School Tour O...",
+      "description": "Maecenas vitae pharetra dolor, ac luctus eros. Nunc vulputate est vitae ante congue tincidunt. Aenean in est lobortis, accumsan metus non, varius libero. In con..."
+    },
+    "event3": {
+      "metaTilte": "Student (Event for)",
+      "metaDate": "07-06-2023 09-06-2023",
+      "metaLocation": "School Playground ed",
+      "title": "Sports Hall and Aqua...",
+      "description": "Integer molestie laoreet libero, quis vestibulum erat sodales quis. Donec quis nisi vitae dui porttitor sodales. Pellentesque efficitur, metus non interdum euis..."
+    },
+    "buttonText": "Read More"
+  },
+  "achievement": {
+    "sectionTitle": "Our Achievement",
+    "achievementTitle1": "Teacher",
+    "number1": "16",
+    "achievementTitle2": "Student",
+    "number2": "500",
+    "achievementTitle3": "Staff",
+    "number3": "6",
+    "achievementTitle4": "User",
+    "number4": "800"
+  },
+  "allnews": {
+    "sectionTitle": "Latest News",
+    "news1": {
+      "metaTilte": "By / Super Admin",
+      "metaDate": "20-06-2022",
+      "title": "The North Kingston S ...",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years o ..."
+    },
+    "news2": {
+      "metaTilte": "By / Super Admin",
+      "metaDate": "18-06-2022",
+      "title": "Govt. Primary School ...",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years o ..."
+    },
+    "news3": {
+      "metaTilte": "By / Super Admin",
+      "metaDate": "15-06-2022",
+      "title": "The North Kingston S ...",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years o ..."
+    },
+    "buttonText": "Read More"
   }
 }

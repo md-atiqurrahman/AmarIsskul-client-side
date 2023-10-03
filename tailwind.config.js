@@ -9,6 +9,9 @@ module.exports = {
         banner3: "url('/src/assets/Banner/banner-3.jpg')",
         welcomeBg: "url('/src/assets/Welcome/welcome-bg.png')",
         FacilitiesBg: "url('/src/assets/Facilities/facilities-bg.png')",
+        LatestEventBg: "url('/src/assets/LatestEvents/event-bg.png')",
+        OurAchievementBg: "url('/src/assets/OurAchievement/achivement-bg.png')",
+        LatestNewsBg: "url('/src/assets/LatestNews/news-bg.png')",
       }
     }
   },
