@@ -1,0 +1,32 @@
+.single-testimonial .principal-thumb img{
+    height: 118px;
+    width: auto;
+    margin: 0px auto 20px;
+    box-shadow: 0px 4px 14.72px 1.28px rgba(94, 94, 94, 0.75);
+    border-radius: 100%;
+}
+
+.single-testimonial .text::before{
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/Testimonial/testimonial-quote-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+}
+.single-testimonial .text::after{
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/Testimonial/testimonial-quote-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+}

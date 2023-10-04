@@ -94,5 +94,11 @@
       "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years o ..."
     },
     "buttonText": "Read More"
+  },
+  "gallery": {
+    "sectionTitle": "Our Gallery",
+    "buttonName1": "All",
+    "buttonName2": "Class Room",
+    "buttonName3": "School Campus"
   }
 }

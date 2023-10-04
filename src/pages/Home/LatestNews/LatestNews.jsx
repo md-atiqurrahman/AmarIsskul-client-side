@@ -32,7 +32,7 @@ const LatestNews = () => {
     },
   ];
   return (
-    <div className="bg-[url('/src/assets/LatestNews/news-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] pb-[70px]">
+    <div className="bg-[url('/src/assets/LatestNews/news-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img
@@ -45,7 +45,7 @@ const LatestNews = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center content-center gap-[30px]">
         {AllNews.map((news) => (
           <SingleNews key={news.id} img={news.img} id={news.id}></SingleNews>
         ))}

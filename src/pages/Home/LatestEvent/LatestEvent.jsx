@@ -33,7 +33,7 @@ const LatestEvent = () => {
         }
     ]
   return (
-    <div className="bg-[url('/src/assets/LatestEvents/event-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] pb-[70px]">
+    <div className="bg-[url('/src/assets/LatestEvents/event-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img
@@ -46,7 +46,7 @@ const LatestEvent = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center content-center gap-[30px]">
        {
         Events.map(event => <SingleEvent
         key={event.id}

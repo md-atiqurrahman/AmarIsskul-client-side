@@ -10,11 +10,13 @@ import img6 from "../../../assets/OurGallery/All/image-6.jpg";
 import classImage1 from "../../../assets/OurGallery/Class Room/classImage-1.jpg";
 import classImage2 from "../../../assets/OurGallery/Class Room/classImage-2.jpg";
 import classImage3 from "../../../assets/OurGallery/Class Room/classImage-3.jpg";
-import campusImage1 from "../../../assets/OurGallery/School Campus/campusImage-1.jpg"
-import campusImage2 from "../../../assets/OurGallery/School Campus/campusImage-2.jpg"
-import campusImage3 from "../../../assets/OurGallery/School Campus/campusImage-3.jpg"
+import campusImage1 from "../../../assets/OurGallery/School Campus/campusImage-1.jpg";
+import campusImage2 from "../../../assets/OurGallery/School Campus/campusImage-2.jpg";
+import campusImage3 from "../../../assets/OurGallery/School Campus/campusImage-3.jpg";
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
+  const { t } = useTranslation("global");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const handleCategoryClick = (category) => {
@@ -33,7 +35,7 @@ const Gallery = () => {
     "block gallery-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] justify-items-center content-center";
 
   return (
-    <div className="bg-white pt-[100px] pb-[70px] mx-[120px]">
+    <div className="bg-white py-[100px] px-[120px]">
       <div className="flex justify-center">
         <div className="flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]">
           <img
@@ -42,7 +44,7 @@ const Gallery = () => {
             alt="Heading Slate"
           />
           <h1 className="text-[50px] leading-[54px] font-medium">
-            Our Gallery
+            {t("gallery.sectionTitle")}
           </h1>
         </div>
       </div>
@@ -53,7 +55,7 @@ const Gallery = () => {
           }`}
           onClick={() => handleCategoryClick("All")}
         >
-          All
+          {t("gallery.buttonName1")}
         </div>
         <div
           className={`${
@@ -61,7 +63,7 @@ const Gallery = () => {
           }`}
           onClick={() => handleCategoryClick("ClassRoom")}
         >
-          Class Room
+         {t("gallery.buttonName2")}
         </div>
         <div
           className={`${
@@ -71,7 +73,7 @@ const Gallery = () => {
           }`}
           onClick={() => handleCategoryClick("SchoolCampus")}
         >
-          School Campus
+          {t("gallery.buttonName3")}
         </div>
       </div>
       <div>
@@ -87,16 +89,24 @@ const Gallery = () => {
           <img src={img5} alt="" />
           <img src={img6} alt="" />
         </div>
-        <div className={`${
-            selectedCategory === "ClassRoom" ? visibleImageClass : hiddenImageClass
-          }`}>
+        <div
+          className={`${
+            selectedCategory === "ClassRoom"
+              ? visibleImageClass
+              : hiddenImageClass
+          }`}
+        >
           <img src={classImage1} alt="" />
           <img src={classImage2} alt="" />
           <img src={classImage3} alt="" />
         </div>
-        <div className={`${
-            selectedCategory === "SchoolCampus" ? visibleImageClass : hiddenImageClass
-          }`}>
+        <div
+          className={`${
+            selectedCategory === "SchoolCampus"
+              ? visibleImageClass
+              : hiddenImageClass
+          }`}
+        >
           <img src={campusImage1} alt="" />
           <img src={campusImage2} alt="" />
           <img src={campusImage3} alt="" />

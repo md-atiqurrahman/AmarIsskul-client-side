@@ -5,6 +5,7 @@ import LatestEvent from "../LatestEvent/LatestEvent";
 import OurAchievement from "../OurAchievement/OurAchievement";
 import LatestNews from "../LatestNews/LatestNews";
 import Gallery from "../Gallery/Gallery";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OurAchievement></OurAchievement>
       <LatestNews></LatestNews>
       <Gallery></Gallery>
+      <Testimonial></Testimonial>
     </div>
   );
 };

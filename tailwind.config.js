@@ -12,8 +12,9 @@ module.exports = {
         LatestEventBg: "url('/src/assets/LatestEvents/event-bg.png')",
         OurAchievementBg: "url('/src/assets/OurAchievement/achivement-bg.png')",
         LatestNewsBg: "url('/src/assets/LatestNews/news-bg.png')",
-      }
-    }
+        TestimonialBg: "url('/src/assets/Testimonial/testimonial-bg.png')",
+      },
+    },
   },
   daisyui: {
     themes: [

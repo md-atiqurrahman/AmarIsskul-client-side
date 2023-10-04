@@ -37,7 +37,7 @@ const Facilities = () => {
     },
   ];
   return (
-    <div className="dark-effect bg-[url('/src/assets/Facilities/facilities-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] z-[2]  relative text-white overflow-hidden">
+    <div className="dark-effect bg-[url('/src/assets/Facilities/facilities-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] px-[120px] z-[2]  relative text-white overflow-hidden">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img className="w-[35px] h-[36px]" src={headingSlate} alt="Heading Slate" />
@@ -46,7 +46,7 @@ const Facilities = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-[74px] relative pb-[100px] mt-[88px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center content-center gap-[74px] relative pb-[100px] mt-[88px]">
         {facilities.map((facility) => (
           <SingleFacilities
             key={facility.id}

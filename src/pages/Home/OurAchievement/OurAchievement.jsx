@@ -37,7 +37,7 @@ const OurAchievement = () => {
   ];
   
   return (
-    <div className="dark-effect bg-[url('/src/assets/OurAchievement/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] pb-[70px] z-[2] relative text-white overflow-hidden">
+    <div className="dark-effect bg-[url('/src/assets/OurAchievement/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] px-[120px] pb-[70px] z-[2] relative text-white overflow-hidden">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img
@@ -50,7 +50,7 @@ const OurAchievement = () => {
           </h1>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-[27px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center content-center gap-[27px]">
         {
              Achievements.map(achievement => <SingleAchievement
              key={achievement.id}

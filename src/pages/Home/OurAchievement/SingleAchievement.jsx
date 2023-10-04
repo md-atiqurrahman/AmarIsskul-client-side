@@ -32,7 +32,7 @@ const SingleAchievement = ({ icon, id }) => {
   return (
     <div
       className="single-achievement flex justify-center items-center flex-col bg-white text-accent text-center 
-      border-[4px] border-primary rounded-[100%] w-[260px] h-[260px] mt-[32px] mb-[50px]  relative"
+      border-[4px] border-primary rounded-[100%] w-[260px] h-[260px] mt-0 lg:mt-[32px] mb-0 lg:mb-[50px]  relative"
     >
       <div className="text-[44px] leading-[50px] text-primary border-b-[2px] border-primary pb-[15px] w-[132px] flex justify-center items-center">
         {icon}
