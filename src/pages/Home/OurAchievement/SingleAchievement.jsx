@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import CountUp, { useCountUp } from "react-countup";
+
 import { useTranslation } from "react-i18next";
 
 const SingleAchievement = ({ icon, id }) => {
@@ -20,6 +22,13 @@ const SingleAchievement = ({ icon, id }) => {
     number = t("achievement.number4");
   }
 
+  useCountUp({
+    ref: "counter",
+    end: number,
+    enableScrollSpy: true,
+    scrollSpyDelay: 5000,
+  });
+
   return (
     <div
       className="single-achievement flex justify-center items-center flex-col bg-white text-accent text-center 
@@ -29,10 +38,17 @@ const SingleAchievement = ({ icon, id }) => {
         {icon}
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h3 className="text-[55px] font-bold text-black">{number}</h3>
+        <h3 className="text-[55px] font-bold text-black">
+          <span>
+            <CountUp end={number} enableScrollSpy />
+          </span>
+        </h3>
         <h4 className="text-[22px] mt-[-15px] font-normal text-black">
           {title}
         </h4>
+      </div>
+      <div id="counter" className="hidden">
+        <CountUp end={number} enableScrollSpy />
       </div>
     </div>
   );

@@ -10,12 +10,12 @@ import { useTranslation } from "react-i18next";
 const Facilities = () => {
   const { t } = useTranslation("global");
 
-  let width;
+  let sectionHeaderClass;
   if (t("facilities.sectionTitle") === "আমাদের সুবিধাসমূহ") {
-    width = "497px";
+    sectionHeaderClass = "w-[497px] flex justify-center items-center gap-[30px] border-primary border-b-[3px]";
   }
   else if (t("facilities.sectionTitle") === "Our Facilities"){
-    width = "357px";
+    sectionHeaderClass = "w-[357px] flex justify-center items-center gap-[30px] border-primary border-b-[3px]";
   }
 
   const facilities = [
@@ -39,9 +39,7 @@ const Facilities = () => {
   return (
     <div className="dark-effect bg-[url('/src/assets/Facilities/facilities-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] z-[2]  relative text-white overflow-hidden">
       <div className="flex justify-center">
-        <div
-          className="flex justify-center items-center gap-[30px] border-primary border-b-[3px]" style={{width: `${width}`}}
-        >
+        <div className={`${sectionHeaderClass}`}>
           <img className="w-[35px] h-[36px]" src={headingSlate} alt="Heading Slate" />
           <h1 className="text-[50px] leading-[54px] font-medium">
             {t("facilities.sectionTitle")}

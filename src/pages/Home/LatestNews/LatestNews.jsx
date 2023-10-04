@@ -6,34 +6,35 @@ import news3 from "../../../assets/LatestNews/news3.jpg";
 import SingleNews from "./SingleNews";
 
 const LatestNews = () => {
- const {t} = useTranslation("global");
+  const { t } = useTranslation("global");
 
- let width;
+  let sectionHeaderClass;
   if (t("allnews.sectionTitle") === "সর্বশেষ খবর") {
-    width = "331px";
-  }
-  else if (t("allnews.sectionTitle") === "Latest News"){
-    width = "341px";
+    sectionHeaderClass =
+      "w-[331px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]";
+  } else if (t("allnews.sectionTitle") === "Latest News") {
+    sectionHeaderClass =
+      "w-[341px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]";
   }
 
-    const AllNews = [
-        {
-            id: 1,
-            img: news1,
-        },
-        {
-            id: 2,
-            img: news2,
-        },
-        {
-            id: 3,
-            img: news3,
-        }
-    ]
+  const AllNews = [
+    {
+      id: 1,
+      img: news1,
+    },
+    {
+      id: 2,
+      img: news2,
+    },
+    {
+      id: 3,
+      img: news3,
+    },
+  ];
   return (
     <div className="bg-[url('/src/assets/LatestNews/news-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] pb-[70px]">
       <div className="flex justify-center">
-        <div className="flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]" style={{width: `${width}`}}>
+        <div className={`${sectionHeaderClass}`}>
           <img
             className="w-[35px] h-[36px]"
             src={headingSlate}
@@ -45,14 +46,9 @@ const LatestNews = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-[30px]">
-       {
-        AllNews.map(news => <SingleNews
-        key={news.id}
-        img={news.img}
-        id={news.id}
-        >
-        </SingleNews>)
-       }
+        {AllNews.map((news) => (
+          <SingleNews key={news.id} img={news.img} id={news.id}></SingleNews>
+        ))}
       </div>
     </div>
   );

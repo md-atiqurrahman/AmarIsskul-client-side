@@ -10,12 +10,12 @@ import { useTranslation } from "react-i18next";
 const LatestEvent = () => {
   const {t} = useTranslation("global");
 
-  let width;
+  let sectionHeaderClass;
   if (t("events.sectionTitle") === "সর্বশেষ ইভেন্ট") {
-    width = "374px";
+    sectionHeaderClass = "w-[374px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]";
   }
   else if (t("events.sectionTitle") === "Latest Event"){
-    width = "343px";
+    sectionHeaderClass = "w-[343px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]";
   }
 
     const Events = [
@@ -35,7 +35,7 @@ const LatestEvent = () => {
   return (
     <div className="bg-[url('/src/assets/LatestEvents/event-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] pb-[70px]">
       <div className="flex justify-center">
-        <div className="flex justify-center items-center gap-[30px] border-primary border-b-[3px] text-black mb-[60px]" style={{width: `${width}`}}>
+        <div className={`${sectionHeaderClass}`}>
           <img
             className="w-[35px] h-[36px]"
             src={headingSlate}

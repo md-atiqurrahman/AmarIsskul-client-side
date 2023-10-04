@@ -15,7 +15,7 @@ const Welcome = () => {
         </div>
         <div className="place-self-start w-[80%] text-accent text-[44px] leading-[46px] font-light">
           <h1> {t("welcome.text")}</h1>
-          <h1 className="text-primary underline text-[40px] leading-[42px] font-bold mb-[50px]">
+          <h1 className="text-primary text-[40px] leading-[42px] font-bold mb-[50px]">
             {t("welcome.name")}
           </h1>
           <p className="text-justify text-[18px] leading-[25px] font-normal mt-[15px]">
