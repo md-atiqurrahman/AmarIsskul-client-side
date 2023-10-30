@@ -1,0 +1,31 @@
+.links li a {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.links li a:hover {
+  color: #2a3f54;
+  transition: all 0.3s;
+}
+
+.links li a::before {
+  content: "";
+  position: absolute;
+  background-color: #2a3f54;
+  left: 0;
+  top: 5px;
+  height: 8px;
+  width: 8px;
+}
+
+.hours li::before{
+  content: "";
+  position: absolute;
+  background-color: #2a3f54;
+  left: 0;
+  top: 10px;
+  height: 8px;
+  width: 8px;
+}

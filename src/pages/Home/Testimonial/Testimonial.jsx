@@ -1,18 +1,18 @@
 import headingSlate from "../../../assets/Facilities/heading-slate-gray.png";
 import "./Testimonial.css";
-import schoolLogo from "../../../assets/Navbar/logo-school.png";
+import schoolLogo from "../../../assets/Navbar/logo1.png";
 import { useTranslation } from "react-i18next";
 
 const Testimonial = () => {
   const { t } = useTranslation("global");
 
   let sectionHeaderClass;
-  if (t("testimonial.sectionTitle") === "কি বলেন অধ্যক্ষ?") {
+  if (t("testimonial.sectionTitle") === "কি বলেন প্রধান শিক্ষক?") {
     sectionHeaderClass =
-      "w-[444px]  flex justify-center items-center gap-[30px] border-primary border-b-[3px] mb-[60px]";
-  } else if (t("testimonial.sectionTitle") === "What Principal Say?") {
+      "w-[573px]  flex justify-center items-center gap-[30px] border-primary border-b-[3px] mb-[60px]";
+  } else if (t("testimonial.sectionTitle") === "What Head Teacher Say?") {
     sectionHeaderClass =
-      "w-[516px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] mb-[60px]";
+      "w-[634px] flex justify-center items-center gap-[30px] border-primary border-b-[3px] mb-[60px]";
   }
 
   let authorNameClass;

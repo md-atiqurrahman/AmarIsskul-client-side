@@ -13,6 +13,7 @@ module.exports = {
         OurAchievementBg: "url('/src/assets/OurAchievement/achivement-bg.png')",
         LatestNewsBg: "url('/src/assets/LatestNews/news-bg.png')",
         TestimonialBg: "url('/src/assets/Testimonial/testimonial-bg.png')",
+        FooterBg: "url('/src/assets/Footer/footer-bg.png')",
       },
     },
   },

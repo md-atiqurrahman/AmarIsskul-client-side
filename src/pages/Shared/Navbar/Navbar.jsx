@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="flex items-center justify-between bg-primary px-[120px] py-[14px] text-[#f0f0f0]">
+      <div className="flex  items-center justify-between bg-primary px-[120px] py-[14px] text-[#f0f0f0]">
         <div className="flex justify-start items-center gap-[30px]">
           <div className="flex justify-center items-center gap-[8px] text-[16px] leading-[26px] font-normal">
             <FaPhoneAlt className="w-[19px] h-[18px]" />
@@ -134,7 +134,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className={navClasses}>
-        <nav className={`${isFixed ? 'flex justify-between items-center px-[120px] bg-primary text-white py-[10px]' : 'flex justify-between items-center px-[120px] bg-secondary text-white py-[10px]'}`}>
+        <nav
+          className={`${
+            isFixed
+              ? "flex justify-between items-center px-[120px] bg-primary text-white py-[10px]"
+              : "flex justify-between items-center px-[120px] bg-secondary text-white py-[10px]"
+          }`}
+        >
           <div>
             <Link to="/">
               <img
@@ -145,7 +151,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <ul className="flex justify-center items-center gap-[30px] text-[18px] font-normal capitalize">
+            <ul className="hidden lg:flex justify-center items-center gap-[30px] text-[18px] font-normal capitalize">
               <li>
                 <Link to="/">{t("menu.home")}</Link>
               </li>

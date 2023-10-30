@@ -47,7 +47,7 @@ const Banner = () => {
 
   return (
     <div
-      className="flex flex-row justify-between items-center text-center max-w-xs lg:max-w-full h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat"
+      className="flex flex-row justify-between items-center text-center max-w-xs lg:max-w-[1440px] h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: reviews[currentReview].bannerImage,
       }}
