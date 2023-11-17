@@ -1,7 +1,7 @@
 import { FaPaw,  FaUsers } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { PiStudentFill } from "react-icons/pi";
-import headingSlate from "/public/heading-slate-gray.png";
+import headingSlate from "/src/assets/Facilities/heading-slate-gray.png";
 import "./OurAchievement.css";
 import SingleAchievement from "./SingleAchievement";
 import { useTranslation } from "react-i18next";
@@ -37,7 +37,7 @@ const OurAchievement = () => {
   ];
   
   return (
-    <div className="dark-effect bg-[url('/public/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] px-[120px] pb-[70px] z-[2] relative text-white overflow-hidden">
+    <div className="dark-effect bg-[url('/src/assets/OurAchievement/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[100px] px-[120px] pb-[70px] z-[2] relative text-white overflow-hidden">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img

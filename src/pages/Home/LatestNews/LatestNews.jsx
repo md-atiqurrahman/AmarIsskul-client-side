@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import headingSlate from "/public/heading-slate-gray.png";
-import news1 from "/public/news1.jpg";
-import news2 from "/public/news2.jpg";
-import news3 from "/public/news3.jpg";
+import headingSlate from "/src/assets/Facilities/heading-slate-gray.png";
+import news1 from "/src/assets/LatestNews/news1.jpg";
+import news2 from "/src/assets/LatestNews/news2.jpg";
+import news3 from "/src/assets/LatestNews/news3.jpg";
 import SingleNews from "./SingleNews";
 
 const LatestNews = () => {
@@ -32,7 +32,7 @@ const LatestNews = () => {
     },
   ];
   return (
-    <div className="bg-[url('/public/news-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
+    <div className="bg-[url('/src/assets/LatestNews/news-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img

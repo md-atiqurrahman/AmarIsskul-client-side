@@ -14,7 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from "../../../../public/logo.png"
+import logo from "/src/assets/Navbar/logo.png"
 import "./Navbar.css";
 
 const Navbar = () => {

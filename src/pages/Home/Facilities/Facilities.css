@@ -11,7 +11,7 @@
 }
 
 .single-facilities::before {
-  background: url(/public/round-slate-gray.png);
+  background: url(/src/assets/Facilities/round-slate-gray.png);
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
