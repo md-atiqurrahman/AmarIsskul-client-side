@@ -14,15 +14,12 @@ const Banner = () => {
   const reviews = [
     {
       id: 1,
-      bannerImage: "url('/src/assets/Banner/banner-1.jpg')",
     },
     {
       id: 2,
-      bannerImage: "url('/src/assets/Banner/banner-2.jpg')",
     },
     {
       id: 3,
-      bannerImage: "url('/src/assets/Banner/banner-3.jpg')",
     },
   ];
 
@@ -45,13 +42,21 @@ const Banner = () => {
     return () => clearTimeout(timer);
   }, [currentReview, handleNext]);
 
+  let divClass;
+
+  if (reviews[currentReview].id === 1) {
+    divClass =
+      "bg-[url('/public/banner-1.jpg')] flex flex-row justify-between items-center text-center max-w-xs lg:max-w-[1440px] h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat";
+  } else if (reviews[currentReview].id === 2) {
+   divClass =
+      "bg-[url('/public/banner-2.jpg')] flex flex-row justify-between items-center text-center max-w-xs lg:max-w-[1440px] h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat";
+  } else if (reviews[currentReview].id === 3) {
+    divClass =
+      "bg-[url('/public/banner-3.jpg')] flex flex-row justify-between items-center text-center max-w-xs lg:max-w-[1440px] h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat";
+  }
+
   return (
-    <div
-      className="flex flex-row justify-between items-center text-center max-w-xs lg:max-w-[1440px] h-[648px] px-1 py-6 relative bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: reviews[currentReview].bannerImage,
-      }}
-    >
+    <div className={divClass}>
       <button
         onClick={handlePrev}
         className="w-[60px] h-[60px] 

@@ -9,7 +9,7 @@
 .single-testimonial .text::before{
     content: "";
     position: absolute;
-    background-image: url(/src/assets/Testimonial/testimonial-quote-1.png);
+    background-image: url(/public/testimonial-quote-1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +21,7 @@
 .single-testimonial .text::after{
     content: "";
     position: absolute;
-    background-image: url(/src/assets/Testimonial/testimonial-quote-2.png);
+    background-image: url(/public/testimonial-quote-2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

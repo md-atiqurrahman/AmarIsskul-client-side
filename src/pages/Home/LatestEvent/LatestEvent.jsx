@@ -1,8 +1,8 @@
-import headingSlate from "../../../assets/LatestEvents/heading-slate-gray.png";
+import headingSlate from "/public/heading-slate-gray.png";
 import "./LatestEvent.css";
-import eventImage1 from "../../../assets/LatestEvents/event-image-1.jpg";
-import eventImage2 from "../../../assets/LatestEvents/event-image-2.jpg";
-import eventImage3 from "../../../assets/LatestEvents/event-image-3.jpg";
+import eventImage1 from "/public/event-image-1.jpg";
+import eventImage2 from "/public/event-image-2.jpg";
+import eventImage3 from "/public/event-image-3.jpg";
 import SingleEvent from "./SingleEvent";
 import { useTranslation } from "react-i18next";
 ``
@@ -33,7 +33,7 @@ const LatestEvent = () => {
         }
     ]
   return (
-    <div className="bg-[url('/src/assets/LatestEvents/event-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
+    <div className="bg-[url('/public/event-bg.png')] bg-cover bg-no-repeat bg-center pt-[100px] px-[120px] pb-[70px]">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img

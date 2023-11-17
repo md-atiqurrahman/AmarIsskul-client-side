@@ -1,18 +1,18 @@
 import { useState } from "react";
 import "./Gallery.css";
-import headingSlate from "../../../assets/Facilities/heading-slate-gray.png";
-import img1 from "../../../assets/OurGallery/All/image-1.jpg";
-import img2 from "../../../assets/OurGallery/All/image-2.jpg";
-import img3 from "../../../assets/OurGallery/All/image-3.jpg";
-import img4 from "../../../assets/OurGallery/All/image-4.jpg";
-import img5 from "../../../assets/OurGallery/All/image-5.jpg";
-import img6 from "../../../assets/OurGallery/All/image-6.jpg";
-import classImage1 from "../../../assets/OurGallery/Class Room/classImage-1.jpg";
-import classImage2 from "../../../assets/OurGallery/Class Room/classImage-2.jpg";
-import classImage3 from "../../../assets/OurGallery/Class Room/classImage-3.jpg";
-import campusImage1 from "../../../assets/OurGallery/School Campus/campusImage-1.jpg";
-import campusImage2 from "../../../assets/OurGallery/School Campus/campusImage-2.jpg";
-import campusImage3 from "../../../assets/OurGallery/School Campus/campusImage-3.jpg";
+import headingSlate from "/public/heading-slate-gray.png";
+import img1 from "/public/image-1.jpg";
+import img2 from "/public/image-2.jpg";
+import img3 from "/public/image-3.jpg";
+import img4 from "/public/image-4.jpg";
+import img5 from "/public/image-5.jpg";
+import img6 from "/public/image-6.jpg";
+import classImage1 from "/public/classImage-1.jpg";
+import classImage2 from "/public/classImage-2.jpg";
+import classImage3 from "/public/classImage-3.jpg";
+import campusImage1 from "/public/campusImage-1.jpg";
+import campusImage2 from "/public/campusImage-2.jpg";
+import campusImage3 from "/public/campusImage-3.jpg";
 import { useTranslation } from "react-i18next";
 
 const Gallery = () => {

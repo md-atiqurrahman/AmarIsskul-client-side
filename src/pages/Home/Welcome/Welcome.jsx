@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import about from "../../../assets/Welcome/about-image.jpg";
+import about from "/public/about-image.jpg";
 
 const Welcome = () => {
   const { t } = useTranslation("global");
   return (
-    <div className="bg-[url('/src/assets/Welcome/welcome-bg.png')] bg-cover bg-center bg-no-repeat py-[100px] px-[120px]">
+    <div className="bg-[url('/public/welcome-bg.png')] bg-cover bg-center bg-no-repeat py-[100px] px-[120px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center content-start gap-[65px]">
         <div>
           <img

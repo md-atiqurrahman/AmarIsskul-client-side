@@ -1,6 +1,6 @@
-import headingSlate from "../../../assets/Facilities/heading-slate-gray.png";
+import headingSlate from "/public/heading-slate-gray.png";
 import "./Testimonial.css";
-import schoolLogo from "../../../assets/Navbar/logo1.png";
+import schoolLogo from "/public/logo.png";
 import { useTranslation } from "react-i18next";
 
 const Testimonial = () => {
@@ -25,7 +25,7 @@ const Testimonial = () => {
   }
 
   return (
-    <div className="dark-effect bg-[url('/src/assets/OurAchievement/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed py-[100px] px-[120px] z-[2] relative text-white overflow-hidden">
+    <div className="dark-effect bg-[url('/public/achivement-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed py-[100px] px-[120px] z-[2] relative text-white overflow-hidden">
       <div className="flex justify-center">
         <div className={`${sectionHeaderClass}`}>
           <img

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/Navbar/logo.png";
+import logo from "/public/logo.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaPinterestP, FaTwitter, FaYoutube } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot} from "react-icons/fa6";
@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="dark-effect bg-[url('/src/assets/Footer/footer-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[160px] pb-[50px] px-[120px] z-[1] relative text-white overflow-hidden border-t-[3px] border-primary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-items-center items-start">
+      <div className="dark-effect bg-[url('/public/footer-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[160px] pb-[50px] px-[120px] z-[1] relative text-white overflow-hidden border-t-[3px] border-primary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-items-center items-start">
         <div className="flex justify-start items-center">
           <div>
             <img

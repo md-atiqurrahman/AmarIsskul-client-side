@@ -13,7 +13,7 @@
 }
 
 .single-event::before {
-  background: url(/src/assets/LatestEvents/border-top.png);
+  background: url(/public/border-top.png);
   content: "";
   background-repeat: no-repeat;
   background-size: 100%;
@@ -33,7 +33,7 @@
     top: -5px;
 }
 .single-event::after {
-  background: url(/src/assets/LatestEvents/border-bottom.png);
+  background: url(/public/border-bottom.png);
   content: "";
   background-repeat: no-repeat;
   background-size: 100%;
