@@ -140,5 +140,9 @@
     "copyrightText1": "Copyright ©",
     "copyrightText2": "Atiqur Rahman",
     "copyrightText3": "- All rights reserved"
+  },
+  "eventsPage":{
+    "title": "Events",
+    "text": "Home >> Events"
   }
 }

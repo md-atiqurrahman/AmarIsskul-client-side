@@ -140,5 +140,9 @@
     "copyrightText1": "কপিরাইট ©",
     "copyrightText2": "আতিকুর রহমান",
     "copyrightText3": " - সর্বস্বত্ব সংরক্ষিত"
+  },
+  "eventsPage":{
+    "title": "ইভেন্টস",
+    "text": "হোম >> ইভেন্টস"
   }
 }
