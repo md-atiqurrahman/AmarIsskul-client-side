@@ -6,7 +6,6 @@ import OurAchievement from "../OurAchievement/OurAchievement";
 import LatestNews from "../LatestNews/LatestNews";
 import Gallery from "../Gallery/Gallery";
 import Testimonial from "../Testimonial/Testimonial";
-import ApplyArea from "../ApplyArea/ApplyArea";
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       <LatestNews></LatestNews>
       <Gallery></Gallery>
       <Testimonial></Testimonial>
-      <ApplyArea></ApplyArea>
     </div>
   );
 };

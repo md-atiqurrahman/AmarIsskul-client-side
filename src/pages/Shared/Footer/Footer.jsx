@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
-import logo from "/src/assets/Navbar/logo.png";
+import logo from "/src/assets/home/Navbar/logo.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaPinterestP, FaTwitter, FaYoutube } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot} from "react-icons/fa6";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
 
+  const { t } = useTranslation("global");
+
   return (
     <footer>
-      <div className="dark-effect bg-[url('/src/assets/Footer/footer-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[160px] pb-[50px] px-[120px] z-[1] relative text-white overflow-hidden border-t-[3px] border-primary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-items-center items-start">
+      <div className="dark-effect bg-[url('/src/assets/home/Footer/footer-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed pt-[160px] pb-[50px] px-[120px] z-[1] relative text-white overflow-hidden border-t-[3px] border-primary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-items-center items-start">
         <div className="flex justify-start items-center">
           <div>
             <img
@@ -20,97 +23,94 @@ const Footer = () => {
               alt="Heading Slate"
             />
             <p className="text-[18px] leading-[25px] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vitae elit vel velit euismod porttitor sed eu neque. Praesent sed
-              volutpat metus. Etiam ut ultricies magna, commodo porta velit.
-              Cras aliquet lectus mauris, sed lacinia nisi cursus a.
+            {t("footer.info")}
             </p>
           </div>
         </div>
         <div className="w-full">
           <h3 className="text-[26px] leading-[30px] font-normal pb-[8px] mb-[28px] border-b-[2px] border-primary">
-            Quick Link
+           {t("footer.linkHeader")}
           </h3>
           <ul className="links">
             <li>
-              <Link to="/">Admission</Link>
+              <Link to="/">{t("footer.linkText1")}</Link>
             </li>
             <li>
-              <Link to="/">News</Link>
+              <Link to="/">{t("footer.linkText2")}</Link>
             </li>
             <li>
-              <Link to="/">Notice</Link>
+              <Link to="/">{t("footer.linkText3")}</Link>
             </li>
             <li>
-              <Link to="/">Holiday</Link>
+              <Link to="/">{t("footer.linkText4")}</Link>
             </li>
             <li>
-              <Link to="/">Event</Link>
+              <Link to="/">{t("footer.linkText5")}</Link>
             </li>
             <li>
-              <Link to="/">Gallery</Link>
+              <Link to="/">{t("footer.linkText6")}</Link>
             </li>
             <li>
-              <Link to="/">Teacher</Link>
+              <Link to="/">{t("footer.linkText7")}</Link>
             </li>
             <li>
-              <Link to="/">Staff</Link>
+              <Link to="/">{t("footer.linkText8")}</Link>
             </li>
             <li>
-              <Link to="/">FAQ</Link>
+              <Link to="/">{t("footer.linkText9")}</Link>
             </li>
             <li>
-              <Link to="/">Contact Us</Link>
+              <Link to="/">{t("footer.linkText10")}</Link>
             </li>
             <li>
-              <Link to="/">Our Mission</Link>
+              <Link to="/">{t("footer.linkText11")}</Link>
             </li>
             <li>
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/">{t("footer.linkText12")}</Link>
             </li>
             <li>
-              <Link to="/">Terms & Condition</Link>
+              <Link to="/">{t("footer.linkText13")}</Link>
             </li>
           </ul>
         </div>
         <div className="w-full">
           <h3 className="text-[26px] leading-[30px] font-normal pb-[8px] mb-[28px] border-b-[2px] border-primary">
-            Opening Hour
+            {t("footer.scheduleHeader")}
           </h3>
           <ul className="hours text-[16px] leading-[30px] text-white">
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Sunday
+              {t("footer.weekday1")}
               <span>10:00 AM - 4:00 PM</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Monday
+            {t("footer.weekday2")}
               <span>10:00 AM - 4:00 PM</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Tuesday
+            {t("footer.weekday3")}
               <span>10:00 AM - 4:00 PM</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Wednesday
+            {t("footer.weekday4")}
               <span>10:00 AM - 4:00 PM</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Thursday
+            {t("footer.weekday5")}
               <span>10:00 AM - 4:00 PM</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Friday
-              <span>Closed</span>
+            {t("footer.weekday6")}
+              <span>{t("footer.weekinfo")}</span>
             </li>
             <li className="border-b border-primary pb-[8px] pl-[20px] mb-[8px] flex justify-between relative">
-              Saturday
-              <span>Closed</span>
+            {t("footer.weekday7")}
+              <span>{t("footer.weekinfo")}</span>
             </li>
           </ul>
         </div>
         <div className="w-full">
           <h3 className="text-[26px] leading-[30px] font-normal pb-[8px] mb-[28px] border-b-[2px] border-primary">
-            Get in Touch
+           {t("footer.contactHeader")}
           </h3>
           <ul className="text-[16px] leading-[24px] text-white">
             <li className="flex justify-start items-center mb-[22px] pt-[4px]">
@@ -129,7 +129,7 @@ const Footer = () => {
               <span className="mr-[12px] mt-[4px]">
                 <FaLocationDot/>
               </span>
-              Moheshpur, Ghagar Bazar-5710, Sadullapur, Gaibandha
+              {t("footer.location")}
             </li>
           </ul>
           <ul className="text-[18px] leading-[30px] text-white flex justify-start items-center">
@@ -167,14 +167,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-neutral py-[20px] text-center text-[16px] leading-[20px] font-normal">
-        Copyright © {year}
+        {t("footer.copyrightText1")} {year}
         <Link
           target="_blank"
           to="https://atiqur-rahman-portfolio-2022.netlify.app/"
         >
-          <span className="cursor-pointer font-bold"> Atiqur Rahman </span>
+          <span className="cursor-pointer font-bold"> {t("footer.copyrightText2")} </span>
         </Link>
-        - All right reserved
+        {t("footer.copyrightText3")}
       </div>
     </footer>
   );

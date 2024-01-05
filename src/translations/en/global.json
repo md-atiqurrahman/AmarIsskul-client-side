@@ -109,5 +109,36 @@
   "applyarea": {
     "text": "Apply Now for Your Kids",
     "btntext": "Apply Now"
+  },
+  "footer":{
+    "info": "Molong Bazar Bl High School. It is a non-government school in Moheshpur, Ghager Bazar-5710, Shadullapur, Gaibandha, Rangpur division. Its EIIN number is 121437 and it offers classes up to secondary level in plain land.",
+    "linkHeader": "Quick Link",
+    "linkText1": "Admission",
+    "linkText2": "News",
+    "linkText3": "Notice",
+    "linkText4": "Holiday",
+    "linkText5": "Event",
+    "linkText6": "Gallery",
+    "linkText7": "Teacher",
+    "linkText8": "Staff",
+    "linkText9": "FAQ",
+    "linkText10": "Contact Us",
+    "linkText11": "Our Mission",
+    "linkText12": "Privacy Policy",
+    "linkText13": "Terms & Condition",
+    "scheduleHeader": "Opening Hour",
+    "weekday1": "Sunday",
+    "weekday2": "Monday",
+    "weekday3": "Tuesday",
+    "weekday4": "Wednesday",
+    "weekday5": "Thursday",
+    "weekday6": "Friday",
+    "weekday7": "Saturday",
+    "weekinfo": "Closed",
+    "contactHeader": "Get in Touch",
+    "location": "Moheshpur, Ghagar Bazar-5710, Sadullapur, Gaibandha",
+    "copyrightText1": "Copyright ©",
+    "copyrightText2": "Atiqur Rahman",
+    "copyrightText3": "- All rights reserved"
   }
 }

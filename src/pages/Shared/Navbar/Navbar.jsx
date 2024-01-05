@@ -14,7 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from "/src/assets/Navbar/logo.png"
+import logo from "/src/assets/home/Navbar/logo.png"
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -202,7 +202,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <Link to="/">{t("menu.events")}</Link>
+                <Link to="/events">{t("menu.events")}</Link>
               </li>
               <li>
                 <Link to="/">{t("menu.teacher")}</Link>
